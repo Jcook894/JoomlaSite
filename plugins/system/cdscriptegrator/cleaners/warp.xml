@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+    <name>YT Warp Theme Framework</name>
+    <version>6.1.6</version>
+    <note>YOOtheme GmbH</note>
+    <libraries>
+        <jquery>
+            <expression>/templates/.*?/warp/libraries/jquery/jquery\.js</expression>
+        </jquery>
+    </libraries>
+</extension>

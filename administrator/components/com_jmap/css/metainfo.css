@@ -1,0 +1,101 @@
+/* Admin generic styles */
+
+table.admintable {
+	width: 100%;
+}
+
+table.admintable td.left_title {
+	width: 20% !important;
+}
+
+table.admintable td.right_details {
+	width: 80% !important;
+}
+
+table.admintable input, table.admintable textarea {
+	width: 50% !important;
+	min-width: 250px !important;
+}
+
+table.adminlist td label.label-sources {
+	margin-right: 5px;
+}
+
+table.adminlist td textarea.metainfo {
+	width: 100%;
+	height: 80px;
+	font-size: 13px;
+}
+
+table.adminlist td select.robots_directive {
+	width: 160px;
+}
+
+table.adminlist td.link_loc {
+	word-break: break-word;
+}
+
+table.adminlist td.link_loc a {
+	min-width: 100px;
+}
+
+table.adminlist tr.subtitles td {
+	font-size: 12px;
+} 
+
+div.alert span.glyphicon-remove {
+	font-size: 11px;
+}
+
+table.adminlist span.labelmetainfo {
+	font-size: 12px;
+}
+
+table.adminlist button.btn[disabled=disabled] {
+	opacity: 0.3;
+}
+
+div.controls {
+	min-width: 100px;
+	font-size: 0;
+}
+
+#system-message-container div.alert {
+	font-size: 14px;
+}
+
+div.pagination div.limit select#limit {
+	width: 60px;
+}
+
+#jmap_alert_message {
+	position: fixed;
+	top: 20px;
+	right: 3%;
+	z-index: 99999;
+}
+
+#alert_append .input-group {
+	margin: 10px 0 10px 0;
+}
+
+#search {
+	width: 250px;
+}
+
+label.jmap_inactive {
+	background: #e6e6e6 !important;
+	color: #333 !important;
+	border: 1px solid #CCC !important;
+}
+
+table.adminlist td.metaimage input.mediaimagefield {
+	width: 100%;
+	max-width: 100%;
+}
+
+span.hasTipPreview.glyphicon {
+	  padding: 1px 4px;
+	  font-weight: normal;
+  line-height: normal;
+}

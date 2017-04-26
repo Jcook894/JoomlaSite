@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+    <name>JA Comment</name>
+    <version>2.5.0</version>
+    <note></note>
+    <libraries>
+        <jquery>
+            <expression>/components/com_jacomment/asset/js/jquery-.*?\.js</expression>
+        </jquery>
+    </libraries>
+</extension>

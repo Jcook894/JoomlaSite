@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+    <name>ZOO</name>
+    <version>2.5.17</version>
+    <note></note>
+    <libraries>
+        <jquery>
+            <expression>/media/zoo/libraries/jquery/jquery\.js</expression>
+        </jquery>
+        <jqueryui>
+            <expression>/media/zoo/libraries/jquery/jquery-ui\.custom\.min\.js</expression>
+        </jqueryui>
+    </libraries>
+</extension>

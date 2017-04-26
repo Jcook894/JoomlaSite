@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+    <name>Google Libraries API</name>
+    <version>unknown</version>
+    <note>Only for jQuery JS.</note>
+    <libraries>
+        <jquery>
+            <expression>(//|http(s)?://)ajax\.googleapis\.com/ajax/libs/jquery/.*?/jquery(\.min)?\.js</expression>
+        </jquery>
+        <jqueryui>
+            <expression>(//|http(s)?://)ajax\.googleapis\.com/ajax/libs/jqueryui/.*?/jquery-ui(\.min)?\.js</expression>
+        </jqueryui>
+    </libraries>
+</extension>

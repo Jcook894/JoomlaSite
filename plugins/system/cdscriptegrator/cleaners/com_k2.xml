@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+    <name>K2</name>
+    <version>2.5.5</version>
+    <note></note>
+    <libraries>
+        <jquery>
+            <expression>/media/k2/assets/js/jquery-.*?\.min\.js</expression>
+        </jquery>
+        <jqueryui>
+            <expression>/media/k2/assets/js/jquery-ui-.*?\.min\.js</expression>
+        </jqueryui>
+    </libraries>
+</extension>

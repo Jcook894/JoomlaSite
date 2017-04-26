@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+    <name>Widgetkit</name>
+    <version>1.0.5</version>
+    <note></note>
+    <libraries>
+        <jquery>
+            <expression>/media/widgetkit/js/jquery\.js</expression>
+        </jquery>
+    </libraries>
+</extension>

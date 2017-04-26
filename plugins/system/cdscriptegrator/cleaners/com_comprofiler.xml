@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension>
+    <name>Community Builder</name>
+    <version>1.8</version>
+    <note></note>
+    <libraries>
+        <jquery>
+            <expression>/components/com_comprofiler/js/jquery-.*?/jquery-.*?\.min\.js</expression>
+        </jquery>
+        <jqueryui>
+            <expression>/components/com_comprofiler/js/jquery-.*?/jquery\.ui-all\.js</expression>
+        </jqueryui>
+    </libraries>
+</extension>

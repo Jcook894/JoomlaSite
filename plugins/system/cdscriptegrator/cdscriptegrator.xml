@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>plg_system_cdscriptegrator</name>
+	<author>Daniel Rataj</author>
+	<creationDate>June 7th, 2012</creationDate>
+	<copyright>(C) 2007 - 2012 Great Joomla! All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL 3</license>
+	<authorEmail>info@greatjoomla.com</authorEmail>
+	<authorUrl>www.greatjoomla.com</authorUrl>
+	<version>2.5.x.2.2.5</version>
+	<description>PLG_SYSTEM_CDSCRIPTEGRATOR_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="cdscriptegrator">cdscriptegrator.php</filename>
+		<filename>index.html</filename>
+		<filename>license-gpl.txt</filename>
+		<folder>cleaners</folder>
+		<folder>fields</folder>
+		<folder>includes</folder>
+		<folder>language</folder>
+		<folder>libraries</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_cdscriptegrator.ini
+		</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_cdscriptegrator.sys.ini
+		</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/cdscriptegrator/fields">
+			<fieldset name="scriptegrator_settings" label="PLG_SYSTEM_CDSCRIPTEGRATOR_FIELDSET_GLOBAL">
+				<field name="compression" type="list" default="0"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_COMPRESSION" description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_COMPRESSION">
+					<option value="0">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_COMPRESSION_NO
+					</option>
+					<option value="1">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_COMPRESSION_YES
+					</option>
+				</field>
+			</fieldset>
+			<fieldset name="highslide_settings" label="PLG_SYSTEM_CDSCRIPTEGRATOR_FIELDSET_HIGHSLIDE">
+				<field type="title"
+					title="PLG_SYSTEM_CDSCRIPTEGRATOR_TITLE_GLOBAL_HIGHSLIDE_CONFIGURATION" />
+				<field name="outlineType" type="list" default="rounded-white"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_OUTLINE_TYPE" description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_OUTLINE_TYPE">
+					<option value="rounded-white">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_OUTLINE_TYPE_ROUNDEDWHITE
+					</option>
+					<option value="rounded-black">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_OUTLINE_TYPE_ROUNDEDBLACK
+					</option>
+					<option value="glossy-dark">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_OUTLINE_TYPE_GLOSSYDARK
+					</option>
+					<option value="beveled">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_OUTLINE_TYPE_BEVELED
+					</option>
+					<option value="drop-shadow">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_OUTLINE_TYPE_DROPSHADOW
+					</option>
+					<option value="outer-glow">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_OUTLINE_TYPE_OUTERGLOW
+					</option>
+				</field>
+				<field name="outlineWhileAnimating" type="list" default="1"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_OUTLINE_WHILE_ANIMATING"
+					description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_OUTLINE_WHILE_ANIMATING">
+					<option value="1">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_OUTLINE_WHILE_ANIMATING_YES
+					</option>
+					<option value="0">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_OUTLINE_WHILE_ANIMATING_NO
+					</option>
+				</field>
+				<field name="showCredits" type="list" default="1"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_SHOW_CREDITS" description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_SHOW_CREDITS">
+					<option value="0">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_SHOW_CREDITS_NO
+					</option>
+					<option value="1">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_SHOW_CREDITS_YES
+					</option>
+				</field>
+				<field name="expandDuration" type="text" default="250"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_EXPAND_DURATION"
+					description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_EXPAND_DURATION" />
+				<field name="anchor" type="list" default="auto"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_ANCHOR" description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_ANCHOR">
+					<option value="auto">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ANCHOR_AUTO
+					</option>
+					<option value="top">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ANCHOR_TOP
+					</option>
+					<option value="top-right">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ANCHOR_TOPRIGHT
+					</option>
+					<option value="right">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ANCHOR_RIGHT
+					</option>
+					<option value="bottom-right">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ANCHOR_BOTTOMRIGHT
+					</option>
+					<option value="bottom">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ANCHOR_BOTTOM
+					</option>
+					<option value="bottom-left">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ANCHOR_BOTTOMLEFT
+					</option>
+					<option value="left">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ANCHOR_LEFT
+					</option>
+					<option value="top-left">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ANCHOR_TOPLEFT
+					</option>
+				</field>
+				<field name="align" type="list" default="auto"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_ALIGN" description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_ALIGN">
+					<option value="auto">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ALIGN_AUTO
+					</option>
+					<option value="center">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ALIGN_CENTER
+					</option>
+				</field>
+				<field name="transitions" type="list" default="auto"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_TRANSITION" description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_TRANSITION">
+					<option value="expand">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_TRANSITION_EXPAND
+					</option>
+					<option value="fade">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_TRANSITION_FADE
+					</option>
+					<option value="expand+fade">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_TRANSITION_EXPANDFADE
+					</option>
+					<option value="fade+expand">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_TRANSITION_FADEEXPAND
+					</option>
+				</field>
+				<field name="dimmingOpacity" type="text" default="0"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_DIMMING_OPACITY"
+					description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_DIMMING_OPACITY" />
+			</fieldset>
+			<fieldset name="cleaners" label="PLG_SYSTEM_CDSCRIPTEGRATOR_FIELDSET_CLEANERS">
+				<field name="enable_cleaners" type="list" default="0"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_ENABLE_CLEANERS"
+					description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_ENABLE_CLEANERS">
+					<option value="0">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ENABLE_CLEANERS_NO
+					</option>
+					<option value="1">PLG_SYSTEM_CDSCRIPTEGRATOR_PARAM_ENABLE_CLEANERS_YES
+					</option>
+				</field>
+				<field type="cleaners" name="cleaners" />
+				<field type="spacer" />
+				<field type="textarea" name="custom_cleaners"
+					label="PLG_SYSTEM_CDSCRIPTEGRATOR_LABEL_CUSTOM_CLEANERS"
+					description="PLG_SYSTEM_CDSCRIPTEGRATOR_DESC_CUSTOM_CLEANERS" cols="35"
+					rows="8" />
+			</fieldset>
+			<fieldset name="uitheme_manager" label="PLG_SYSTEM_CDSCRIPTEGRATOR_FIELDSET_UITHEME_MANAGER">
+				<field name="uithememanager" type="uithememanager" />
+				<field name="uithemeshowcase" type="uithemeshowcase" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

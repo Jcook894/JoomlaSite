@@ -1,0 +1,90 @@
+/************** UI skin *********************/
+.ui
+{
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: left;
+}
+.ui .ddTitle
+{
+	cursor: default;
+	height: 95px;
+	overflow: hidden;
+	padding: 5px 8px;
+	text-indent: 0;
+}
+.ui .ddTitle span.arrow
+{
+	background: url(../images/dd_arrow.gif) no-repeat 0 0;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	height: 16px;
+	width: 16px;
+}
+.ui .ddTitle span.ddTitleText
+{
+	line-height: 16px;
+	overflow: hidden;
+	text-indent: 1px;
+}
+.ui .ddTitle span.ddTitleText img
+{
+	padding: 0 2px 0 0;
+	text-align: left;
+}
+.ui .ddTitle img.selected
+{
+	padding: 0 3px 0 0;
+	vertical-align: top;
+}
+.ui .ddChild
+{
+	background-color: #ffffff;
+	border: 1px solid #c3c3c3;
+	border-top: none;
+	display: none;
+	margin: 0;
+	overflow: auto;
+	overflow-x: hidden !important;
+	position: absolute;
+	width: auto;
+}
+.ui .ddChild .opta a, .ui .ddChild .opta a:visited
+{
+	padding-left: 10px;
+}
+.ui .ddChild a
+{
+	color: #000;
+	cursor: pointer;
+	display: block;
+	margin: 5px;
+	overflow: hidden;
+	padding: 2px 0 2px 3px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.ui .ddChild a:hover
+{
+	background-color: #66CCFF;
+}
+.ui .ddChild a img
+{
+	border: 0;
+	padding: 0 2px 0 0;
+	vertical-align: middle;
+}
+.ui .ddChild a.selected
+{
+	background-color: #66CCFF;
+}
+.ui .borderTop
+{
+	border-top: 1px solid #c3c3c3 !important;
+}
+.ui .noBorderTop
+{
+	border-top: none 0 !important;
+}
